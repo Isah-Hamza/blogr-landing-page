@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <div class="wrapper ">
+        <section class="hero flex flex-col px-4 md:px-8 lg:px-16  xl:px-24 bg-hero-lg  bg-lightRed h-[570px] bg-center bg-cover pt-8 text-white rounded-bl-[80px]">
+            <nav class="flex justify-between gap-10 relative font-bold">
+                <div class="left flex items-center gap-10">
+                    <div ><img src="./images/logo.svg" class ="h-8" alt="logo"></div>
+                </div>
+                <div data-nav class="middle hide z-10 flex-col md:flex-row flex-1 absolute md:static shadow-lg md:shadow-none  bg-white md:bg-transparent text-veryDarkBlue md:text-white top-[180%] min-h-[400px] md:min-h-0  pt-3 md:pt-0 pb-6 md:pb-0 w-full md:h-auto  md:flex justify-between items-center gap-7">
+                    <div class="navlist md:block px-4 md:px-0 ">
+                        <ul class="flex gap-5 ">
+                            <li class="nav-item group"> 
+                                <div class="flex gap-2">
+                                    <span>Product</span> 
+                                    <img class="hidden md:block" src="./images/icon-arrow-light.svg" alt="icon-arrow-light">
+                                    <img class="md:hidden" src="./images/icon-arrow-dark.svg" alt="icon-arrow-light">
+                                </div>
+                                <ul class="inner-ul hidden w-full text-center md:text-left md:w-40 group-hover:flex flex-col md:absolute top-10 -left-4 bg-[#efeff1] md:bg-white rounded-[5px] drop-shadow-lg py-7 font-semibold px-5 text-black gap-[14px] " >
+                                    <li class="hover:font-bold cursor-pointer" >Overview</li>
+                                    <li class="hover:font-bold cursor-pointer" >Pricing</li>
+                                    <li class="hover:font-bold cursor-pointer" >Marketplace</li>
+                                    <li class="hover:font-bold cursor-pointer" >Features</li>
+                                    <li class="hover:font-bold cursor-pointer" >Integrations</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item group"> 
+                                <div class="flex gap-2">
+                                    <span>Company</span> 
+                                    <img class="hidden md:block" src="./images/icon-arrow-light.svg" alt="icon-arrow-light">
+                                    <img class="md:hidden" src="./images/icon-arrow-dark.svg" alt="icon-arrow-light">
+                                </div>
+                                <ul class="inner-ul hidden w-full text-center md:text-left md:w-40 group-hover:flex flex-col md:absolute top-10 -left-4 bg-[#efeff1] md:bg-white rounded-[5px] drop-shadow-lg py-7 font-semibold px-5 text-black gap-[14px] " >
+                                    <li class="hover:font-bold cursor-pointer" >About</li>
+                                    <li class="hover:font-bold cursor-pointer" >Team</li>
+                                    <li class="hover:font-bold cursor-pointer" >Blog</li>
+                                    <li class="hover:font-bold cursor-pointer" >Careers</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item group"> 
+                                <div class="flex gap-2">
+                                    <span>Connect</span> 
+                                    <img class="hidden md:block" src="./images/icon-arrow-light.svg" alt="icon-arrow-light">
+                                    <img class="md:hidden" src="./images/icon-arrow-dark.svg" alt="icon-arrow-light">
+                                </div>
+                                <ul class="inner-ul hidden w-full text-center md:text-left md:w-40 group-hover:flex flex-col md:absolute top-10 -left-4 bg-[#efeff1] md:bg-white rounded-[5px] drop-shadow-lg py-7 font-semibold px-5 text-black gap-[14px] " >
+                                    <li class="hover:font-bold cursor-pointer" >Contact</li>
+                                    <li class="hover:font-bold cursor-pointer" >Newsletter</li>
+                                    <li class="hover:font-bold cursor-pointer" >LinkedIn</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right md:flex items-center gap-7">
+                        <button class=" h-12 md:text-white font-bold">Login</button>
+                        <button  class=" text-white bg-lightRed hover:bg-veryLightRed hover:text-white border border-white h-12 md:bg-white rounded-3xl outline-none px-8 py-2 font-bold md:text-lightRed">Sign Up</button>
+                    </div>              
+                </div>
+                <div data-toggler class="toggler md:hidden flex items-center ">
+                    <img data-menu-icon src="./images/icon-hamburger.svg" alt="icon-hamburger">
+                    <img data-close-icon class="hide" src="./images/icon-close.svg" alt="icon-close">
+                </div>
+            </nav>
+            <div class="intro flex-1 flex flex-col items-center justify-center text-center md:text-left">
+                <h1 class=" text-3xl  md:text-5xl font-semibold">A modern publishing platform </h1>
+                <p class="text-xl mt-6 mb-14 opacity-80" >Grow your audience and build your online brand</p>
+                <div class="flex gap-5 whitespace-nowrap " >
+                    <button class="hover:bg-veryLightRed hover:text-white border border-white  font-semibold bg-white text-lightRed px-4 md:px-8 h-12 rounded-3xl ">Start for Free</button>
+                    <button class="hover:bg-white hover:text-lightRed font-semibold px-4 md:px-8 h-12 border border-white rounded-3xl" >Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section class="future text-center md:text-left md:bg-illustration-lg  pt-16 pb-20 bg-no-repeat  px-4 md:px-8 lg:px-16  xl:px-28 my-6 ">
+            <h2 class="text-center font-bold text-[1.75rem] md:text-3xl text-veryDarkBlue mb-16 md:mr-20 ">Designed for the future</h2>
+            <div class=" flex flex-col-reverse gap-5 md:gap-0 md:grid grid-cols-2">
+                <div class="left ">
+                    <div>
+                        <p class="font-semibold text-2xl text-veryDarkBlue mb-6" >Introducing an extensible editor</p>
+                        <p class="mb-10 text-sm lg:w-4/5">  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                            change the looks of a blog.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-2xl text-veryDarkBlue mb-6"> Robust content management</p>
+                        <p class=" text-sm lg:w-4/5 ">  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                    </div>
+                </div>
+                <div class="right mb-5 md:mb-0">
+                    <img class="md:hidden mx-auto" src="./images/illustration-editor-mobile.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="infrastructure flex flex-col md:flex-row  px-4 md:px-8 lg:px-16 xl:px-24 mt-40 md:mt-0 md:mb-40 items-center bg-no-repeat bg-left-bottom  bg-[hsl(237,23%,32%)] bg-circle h-[600px] md:h-96 rounded-tr-[80px] rounded-bl-[80px]" >
+            <div class="left -mt-40 md:mt-20">
+                <img class=" md:h-[650px] md:w-[2000px]" src="./images//illustration-phones.svg" alt="illustration-phones">
+            </div>
+            <div class="right text-center md:text-left text-white">
+                <p class="text-3xl mb-6 font-semibold " >State of the Art Infrastructure</p>
+                <p class="text-base leading-7">  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
+        </section>
+        <section class="free  md:bg-laptop-lg  bg-no-repeat py-14 md:py-32 px-4 md:px-8 lg:px-16  xl:px-28 my-14 mb-20 ">
+            <div class="grid gap-10  md:gap-0 md:grid-cols-2">
+                <div class="left">
+                    <img class="md:hidden w-full " src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop-mobile">
+                </div>
+                <div class="right text-center md:text-left ">
+                    <div>
+                        <p class="font-semibold text-2xl text-veryDarkBlue mb-6"> Free, open, simple</p>
+                        <p class="mb-10 text-sm">   Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-2xl text-veryDarkBlue mb-6">   Powerful tooling</p>
+                        <p class=" text-sm ">    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                            capable of producing even the most complicated sites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="grid md:grid-cols-2 gap-10 lg:grid-cols-4 text-center md:text-left rounded-tr-[80px] mt-10  px-4 md:px-8 lg:px-16 xl:px-24 bg-[hsl(240,10%,16%)] text-[hsl(240,2%,79%)] py-12 ">
+            <div>
+                <img class="mx-auto md:mx-0" src="../images/logo.svg" alt="logo">
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-white ">Product</p> 
+                <p class="mb-1 text-sm">Overview</p>
+                <p class="mb-1 text-sm">Pricing</p> 
+                <p class="mb-1 text-sm">Marketplace</p>
+                <p class="mb-1 text-sm">Features</p>
+                <p class="mb-1 text-sm">Integrations</p>
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-white">Company</p> 
+                <p class= "mb-1 text-sm">About</p>
+                <p class= "mb-1 text-sm">Team</p> 
+                <p class= "mb-1 text-sm">Blog</p> 
+                <p class= "mb-1 text-sm">Careers</p> 
+            </div>
+            <div>
+                <p class="font-bold mb-4 text-white" >Connect</p> 
+                <p  class= "mb-1 text-sm">Contact</p> 
+                <p  class= "mb-1 text-sm">Newsletter</p> 
+                <p  class= "mb-1 text-sm">LinkedIn</p> 
+            </div>
+        </footer>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>

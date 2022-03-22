@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *, *::after, *::before{
+        @apply m-0 p-0
+    }
+    body{
+        @apply box-border
+    }
+}
+
+@layer components{
+    .nav-item{
+        @apply flex items-center gap-2 pb-5 mt-5  relative  md:mx-0
+    }
+    .nav-item:hover span{
+        @apply underline cursor-pointer
+    }
+    .nav-item img{
+        @apply w-3 object-contain mt-1 transition-transform duration-300 ease-linear
+    }
+
+    .nav-item:hover img{
+        @apply rotate-180
+    }
+
+    .future{
+        background-position:117%;
+        background-size: 52% 100%;
+    }
+    .infrastructure{
+        background-size:60%;
+    }
+    .free{
+        background-position:-25%;
+        background-size: 50% 100%;
+    }
+    footer > div > p:not(:first-child):hover{
+        @apply underline cursor-pointer
+    }   
+    @media screen and (max-width:1280px) {
+        .free{
+            background-size: 60% 100%;
+        }
+    }
+    @media screen and ( max-width:768px ) {
+        .hide{
+            @apply hidden
+        }
+        .navlist > ul{
+            @apply flex-col gap-0 border-b-[1px] border-b-[gainsboro] mx-2 pb-4 mb-4 
+        }
+        .navlist ul li{
+            @apply flex-col
+        }
+        .middle .right{
+            @apply flex flex-col gap-3
+        }
+        .hide{
+            @apply hidden
+        }
+    }
+    @media screen and ( max-width:500px ) {
+        .infrastructure{
+            @apply !h-[500px]
+        }
+    }
+}
